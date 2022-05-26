@@ -1,0 +1,287 @@
+*{
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: #00c28e;
+    --client-color: #f1f1f1;
+}
+
+body{
+    font-family: poppins;
+}
+
+/* header{
+    background: url('img/hero-bg.jpg');
+} */
+
+.hero-nav{
+    background-color: var(--color);
+}
+
+.hero-nav a{
+    color: black;
+}
+
+.hero-nav a:hover{
+    color: white;
+}
+
+.hero-nav .nav-link{
+    margin-right: 1rem;
+}
+
+.hero-text{
+    color: rgb(32, 32, 32);
+   padding-top: 10rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-btn{
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 9em;
+    padding: 0.7rem;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+
+
+.hero-btn:hover{
+    background-color: var(--color);
+    color: white;
+    border: none;
+    transition: .5s ease;
+}
+
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    justify-content: space-around;
+    padding-block: 1rem;
+}
+
+.client-ctn{
+    background-color: var(--client-color);
+}
+
+.clients img{
+    width: 30px;
+    filter: brightness(20%);
+}
+
+.clients img:hover{
+    filter:brightness(100%)
+}
+
+
+
+/* .why{
+    padding: 3rem 0;
+} */
+
+.why-green{
+    background-color: var(--color);
+    color: white;
+    padding: 2rem;
+}
+
+.why-green h2{
+    padding-bottom: 1rem;
+}
+
+.btn{
+    text-align: center;
+}
+
+.why-green button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 1rem;
+    background-color: #05d19b;
+    color: white;
+}
+
+.why-green button:hover{
+    background-color: white;
+    color: #05d19b;
+}
+
+.dry{
+    background-color: white;
+    filter: drop-shadow(3px 3px 15px rgb(233, 233, 233));
+    /* margin-right: 1rem; */
+    padding: 1.5rem;
+}
+
+.why-div-ctn{
+    gap: 2rem;
+}
+
+.number{
+    background-color: var(--color);
+    padding: 1rem 0 0 0;
+    color: white;
+    margin: 2rem 0;
+}
+
+.testimonial{
+    padding: 2rem 0 4rem 0;
+}
+
+.testimonial img{
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.product-img{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.product-img .img{
+    width: 100%;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: 0.7s ease;
+    backface-visibility: hidden;
+}
+
+.overlay{
+    transition: .6s ease;
+    opacity: 0;
+    top: 50px;
+    left: 50px;
+    /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    text-align: center;
+}
+
+.product-img:hover .img{
+    opacity: 0.5;
+}
+
+.product-img:hover .overlay{
+    opacity: 1;
+}
+
+.overlay p{
+    background-color: var(--color);
+    color: white;
+    padding: 12px 22px;
+    font-size: 15px;
+}
+
+
+/* Footer  */
+
+.foot{
+    background-color: rgb(248, 248, 248);
+    padding: 2rem 0 0 0;
+}
+
+.foot span{
+    color: var(--color);
+}
+
+.foot .br{
+    background-color: var(--color);
+    border-radius: 30px;
+}
+
+.copy{
+    background-color: rgb(238, 238, 238);
+    padding: 2rem 0;
+}
+
+.copy-ctn small{
+    color: var(--color);
+}
+
+.social{
+    display: flex;
+    gap: 2rem;
+    
+}
+.bi{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: var(--color);
+    height: 40px;
+    width: 40px;
+}
+
+/* About Page  */
+
+.welcome{
+    padding: 2rem 0;
+}
+
+.about-products img{
+    margin-bottom: 2rem;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.about-products img:hover{
+    transition: .7s ease-in;
+    border-radius: 10px;
+    opacity: 0.8;
+    padding: -1rem;
+    width: 300px;
+}
+
+.team .card img{
+    width: 150px;
+    margin: auto;
+}
+
+.cardy{
+    width: 10rem;
+    
+}
+
+/* Contact Page  */
+.contact-page{
+    padding-top: 2rem;
+}
+
+.contact-page img{
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.location, .email-no, .form{
+    background-color: white;
+    padding: 1.5rem;
+    filter: drop-shadow(3px 3px 8px rgb(231, 231, 231));
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+.contact-page button{
+    background-color: var(--color);
+    color: white;
+}
