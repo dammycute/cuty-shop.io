@@ -1,0 +1,82 @@
+*{
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: #00c28e;
+    --client-color: #f1f1f1;
+}
+
+body{
+    font-family: poppins;
+}
+
+/* header{
+    background: url('img/hero-bg.jpg');
+} */
+
+.hero-nav{
+    background-color: var(--color);
+}
+
+.hero-nav a{
+    color: black;
+}
+
+.hero-nav a:hover{
+    color: white;
+}
+
+.hero-text{
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+}
+
+.hero-btn{
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    background-color: var(--color);
+    color: white;
+    border: none;
+    transition: .5s ease;
+}
+
+.client-ctn{
+    background-color: var(--client-color);
+}
+
+.clients img{
+    width: 30px;
+    filter: brightness(20%);
+}
+
+.clients img:hover{
+    filter:brightness(100%)
+}
+
+.why-green button:hover{
+    background-color: white;
+    color: #05d19b;
+}
+
+.why-div-ctn{
+    gap: 2rem;
+}
+
+.testimonial img{
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+
+
+
+

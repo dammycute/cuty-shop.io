@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page | Cuty Shop</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <style>
+        .product-img {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .product-img .img {
+            width: 100%;
+            opacity: 1;
+            display: block;
+            height: auto;
+            transition: 0.7s ease;
+            backface-visibility: hidden;
+        }
+
+        .overlay {
+            transition: .6s ease;
+            opacity: 0;
+            top: 50px;
+            left: 50px;
+            /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+            text-align: center;
+        }
+
+        .product-img:hover .img {
+            opacity: 0.5;
+        }
+
+        .product-img:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay p {
+            background-color: var(--color);
+            color: white;
+            padding: 12px 22px;
+            font-size: 15px;
+        }
+
+
+        /* Footer  */
+
+        .foot {
+            background-color: rgb(248, 248, 248);
+            padding: 2rem 0 0 0;
+        }
+
+        .foot span {
+            color: var(--color);
+        }
+
+        .foot .br {
+            background-color: var(--color);
+            border-radius: 30px;
+        }
+
+        .copy {
+            background-color: rgb(238, 238, 238);
+            padding: 2rem 0;
+        }
+
+        .copy-ctn small {
+            color: var(--color);
+        }
+
+        .social {
+            display: flex;
+            gap: 2rem;
+
+        }
+
+        .bi {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            background-color: var(--color);
+            height: 40px;
+            width: 40px;
+        }
+
+        /* About Page  */
+
+        .welcome {
+            padding: 2rem 0;
+        }
+
+        .about-products img {
+            margin-bottom: 2rem;
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .about-products img:hover {
+            transition: .7s ease-in;
+            border-radius: 10px;
+            opacity: 0.8;
+            padding: -1rem;
+            width: 300px;
+        }
+
+        .team .card img {
+            width: 150px;
+            margin: auto;
+        }
+
+        .cardy {
+            width: 10rem;
+
+        }
+
+        /* Contact Page  */
+        .contact-page {
+            padding-top: 2rem;
+        }
+
+        .contact-page img {
+            border-radius: 10px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .location,
+        .email-no,
+        .form {
+            background-color: white;
+            padding: 1.5rem;
+            filter: drop-shadow(3px 3px 8px rgb(231, 231, 231));
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .contact-page button {
+            background-color: var(--color);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('img/hero-bg.png'); background-size: cover;">
+        <section class="hero-nav  fixed-top" style="background-color: var(--color);">
+            <nav class="navbar navbar-expand-lg container navbar-dark">
+                <a class="navbar-brand" href="index.html">Cuty Shop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link mr-3" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <div
+            class="hero-text container d-flex flex-column justify-content-center align-content-center text-white text-center">
+            <h1>Your New Online Mall for Skin Care</h1>
+            <p>Online Shop Where you get the best skin products</p>
+            <p class="hero-btn btn mx-auto p-2 w-25">GET STARTED</p>
+        </div>
+    </header>
+
+    <section class="welcome container">
+        <div class="row">
+            <div class="welcome-left col-lg-6 p-4">
+                <img src="img/skin.jpg" class="img-fluid" style="border-radius: 10px;" alt="">
+            </div>
+            <div class="welcome-right col-lg-6 container p-4">
+                <h2 class="mb-3">Welcome to Cuty Shop, we give you the best products</h2>
+                <p>
+                    Welcome to Cuty Skin Store, your number one source for all things pertaining to skin care. We're
+                    dedicated to providing you the very best of different products, with an emphasis on quality, reliability
+                    and effectiveness. <br>
+                    Founded in 2019 by Damilola Kyun, Cuty Skin Store has come a long way from its beginnings in Daegu. When
+                    Damilola Kyun first started out, his passion for healthy skin drove them to start their own business.
+                    We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or
+                    comments, please don't hesitate to contact us.
+                    Sincerely,
+                    Damilola Kyun.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-products container">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div class="d-sm-flex row align-items-center justify-content-center ">
+            <div class="col-lg-4 col-md-6">
+                <img src="img/products/product1.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="img/products/product2.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-lg-4 col-md-6"> 
+                <img src="img/products/product3.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="img/products/product4.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="img/products/product5.jpg" class="img-fluid"/>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="img/products/product6.jpg" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+
+    <section class="team py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">TEAM</h2>
+            <div class="row d-flex justify-content-around flex-wrap align-items-center" style="row-gap: 2rem;">
+                <div class="card cardy bg-white col-lg-3 col-md-6 col-sm-12 py-4 shadow" style="width: 15rem;">
+                    <img src="img/team/team-1.jpg" class="card-img-top img-fluid rounded-circle" alt="team">
+                    <div class="text-center">
+                      <h5 class="card-title">Kim Hyun</h5>
+                      <p class="card-text">Head of Marketing</p>
+                      
+                    </div>
+                </div>
+                <div class="card cardy bg-white py-4 col-lg-3 col-md-6 col-sm-12 shadow">
+                    <img src="img/team/team-2.jpg" class="card-img-top img-fluid rounded-circle" alt="team">
+                    <div class="text-center">
+                      <h5 class="card-title">Hyo Sunbae</h5>
+                      <p class="card-text">Head of HR</p>
+                      
+                    </div>
+                </div>
+                <div class="card cardy bg-white py-4 col-lg-3 shadow-lg">
+                    <img src="img/team/team-3.jpg" class="card-img-top img-fluid rounded-circle" alt="team">
+                    <div class="text-center">
+                      <h5 class="card-title">James John</h5>
+                      <p class="card-text">CTO</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<style>
+    .h{
+        display: flex;
+        padding: 3rem ;
+        justify-content: space-around;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+    .h p{
+        width: 100%;
+        max-width: 300px;
+    }
+</style>
+
+    <div class="h">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, dolores, ipsa laudantium quidem dolorum at fugit quasi nisi quam aliquam consectetur aperiam, molestiae illum saepe non laboriosam officiis fuga! Cupiditate!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellendus obcaecati recusandae nobis earum pariatur, deleniti, a ipsa aspernatur animi architecto fugit dolore, nisi harum? Unde voluptate reiciendis libero dolore aliquam laboriosam perspiciatis, reprehenderit illum, ad sequi aliquid? Illum deleniti quia atque dicta ullam eius voluptate nobis iusto, saepe quisquam!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptas similique natus facere veritatis magnam sapiente possimus? Esse voluptatem omnis tenetur quibusdam alias totam sequi, consequatur magni? Necessitatibus eos aut ducimus minus, eaque facere incidunt animi architecto debitis quis doloremque!</p>
+    </div>
+
+    <footer class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="foot-cuty col-lg-3 col-md-6">
+                    <h3>Cuty Shop</h3>
+                    <p>A005 Krud <br>New Busan, 88679 <br>South Korea</p>
+                    <div class="contact">
+                        <p><b>Phone:</b>+82-8-647-7953</p>
+                    <p><b>Email:</b> info@example.com</p>
+                    </div>
+                </div>
+                <div class="links col-lg-3 col-md-6">
+                    <h5>Useful Links</h5>
+                    <ul>
+                        <li><span>></span> Home</li>
+                        <li><span>></span> About</li>
+                        <li><span>></span> Services</li>
+                        <li><span>></span> Terms of Service</li>
+                        <li><span>></span> Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="links col-lg-3 col-md-6">
+                    <h5>Our Products</h5>
+                    <ul>
+                        <li><span>></span> Creams</li>
+                        <li><span>></span> Lotions</li>
+                        <li><span>></span> Ointments</li>
+                        <li><span>></span> Suspensions</li>
+                        <li><span>></span> Aerosols</li>
+                    </ul>
+                </div>
+                <div class="form col-lg-3 col-md-6">
+                    <h5>Join Our Newsletter</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your Email">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text br">Subscribe</div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy container-fluid ">
+            <div class="copy-ctn container d-flex justify-content-between flex-wrap">
+                <div class="copy-content">
+                    <p>&copy Copyright <b>Cuty Shop.</b> All Rights Reserved</p>
+                    <small>Got inspiration from <a href="https://bootstrapmade.com" style="color: var(--color); text-decoration: underline;">bootstrapmade</a></small>
+                </div>
+                <div class="social">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-discord"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
